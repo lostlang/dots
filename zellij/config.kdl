@@ -1,0 +1,27 @@
+default_mode "locked"
+keybinds {
+	locked {
+		bind "Alt f" {
+			GoToNextTab {
+				
+			}
+		}
+	}
+}
+theme "lostsand"
+themes {
+	lostsand {
+		bg "#A69B9C"
+		black "#EDDFBF"
+		blue "#074297"
+		cyan "#07974A"
+		fg "#437F06"
+		green "#437F06"
+		magenta "#970771"
+		orange "#973D07"
+		red "#EDDFBF"
+		white "#60577A"
+		yellow "#977407"
+	}
+}
+
