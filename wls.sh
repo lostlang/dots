@@ -4,9 +4,9 @@
 sudo pacman -Syu --noconfirm
 
 # Install packages
-sudo pacman -Syu --noconfirm openssh zip unzip inetutils
+sudo pacman -Syu --noconfirm openssh zip unzip inetutils less
 sudo pacman -Syu --noconfirm fish zellij neovim neofetch htop
-sudo pacman -Syu --noconfirm python go npm rustup
+sudo pacman -Syu --noconfirm python go npm rustup clang
 
 # Setup fish
 sudo chsh -s /usr/bin/fish
@@ -19,10 +19,6 @@ cp -r zellij $HOME/.config
 
 # Setup nvim
 git clone https://github.com/lostlang/NvimConfig.git $HOME/.config/nvim
-git clone https://aur.archlinux.org/golangci-lint.git golangci-lint
-cd golangci-lint
-makepkg -sic --noconfirm
-cd ..
 
 # Setup rust
 rustup default stable
