@@ -4,7 +4,7 @@
 sudo pacman -Syu --noconfirm
 
 # Install packages
-sudo pacman -Syu --noconfirm openssh zip unzip inetutils less
+sudo pacman -Syu --noconfirm openssh zip unzip inetutils less ripgrep fd fzf
 sudo pacman -Syu --noconfirm fish zellij neovim neofetch htop
 sudo pacman -Syu --noconfirm python go npm rustup clang
 
@@ -18,7 +18,7 @@ cp -r omf $HOME/.config
 cp -r zellij $HOME/.config
 
 # Setup nvim
-git clone https://github.com/lostlang/NvimConfig.git $HOME/.config/nvim
+git clone git@github.com:lostlang/NvimConfig.git $HOME/.config/nvim
 
 # Setup rust
 rustup default stable
